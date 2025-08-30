@@ -1,0 +1,121 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/forget/forget",
+  "pages/yonghu/register",
+ 
+  "pages/shop-orders/orders-confirm",
+  "pages/shop-orders/orders-list",
+  "pages/shop-recharge/recharge",
+  "pages/shop-cart/shop-cart",
+  "pages/shop-recharge/pay-confirm",
+    "pages/pay-confirm/pay-confirm",
+    "pages/user-info/user-info",
+    "pages/keyboardNumber/keyboardNumber",
+    "pages/reply/reply",
+    "component/dateTimePicker/dateTime",
+    "component/com-date/com-date",
+    "component/com-editor/com-editor",
+    "component/comment-item/comment-item",
+    "component/com-popup/com-popup",
+    "component/com-video/com-video",
+    "component/com-manySel/com-manySel",
+    "component/tree-menu/tree-menu",
+    "pages/shop-orders/logistics",
+  "pages/forum/forum-add-or-update",
+  "pages/forum/forum-my",
+  "pages/forum/forum-list",
+  "pages/forum/forum-detail",
+  "pages/forum/forum-index",
+   "pages/yonghu/detail",
+    "pages/yonghu/update-and-add",
+    "pages/yonghu/list",
+   "pages/shequzixun/detail",
+    "pages/shequzixun/update-and-add",
+    "pages/shequzixun/list",
+   "pages/nongchanpinfenlei/detail",
+    "pages/nongchanpinfenlei/update-and-add",
+    "pages/nongchanpinfenlei/list",
+   "pages/nongchanpin/detail",
+    "pages/nongchanpin/update-and-add",
+    "pages/nongchanpin/list",
+  "pages/address/list",
+  "pages/address/detail",
+   "pages/nongchanpinjiaoyu/detail",
+    "pages/nongchanpinjiaoyu/update-and-add",
+    "pages/nongchanpinjiaoyu/list",
+   "pages/youhuicuxiao/detail",
+    "pages/youhuicuxiao/update-and-add",
+    "pages/youhuicuxiao/list",
+   "pages/discussnongchanpin/detail",
+    "pages/discussnongchanpin/update-and-add",
+    "pages/discussnongchanpin/list",
+    "pages/addcomment/addcomment",
+    "pages/center/center"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的"
+    }
+  },
+  "requiredPrivateInfos": [ "getLocation" ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+
+  "tabBar": {
+    "selectedColor": "#33a3dc",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/static/index.png",
+        "selectedIconPath": "/static/index1.png",
+        "text": "首页"
+      },
+
+
+
+{
+  "pagePath": "pages/forum/forum-list",
+  "iconPath": "static/tabs/1/forum.png",
+  "selectedIconPath": "static/tabs/1/forum_act.png",
+  "text": "社区分享"
+},
+
+
+
+  {
+  "pagePath": "pages/nongchanpin/list",
+    "iconPath": "/static/tabs/1/icon1.png",
+    "selectedIconPath": "/static/tabs/1/icon1_act.png",
+      "text": "农产品"
+  },
+
+
+
+
+  {
+  "pagePath": "pages/nongchanpinjiaoyu/list",
+    "iconPath": "/static/tabs/1/icon2.png",
+    "selectedIconPath": "/static/tabs/1/icon2_act.png",
+      "text": "农产品教育"
+  },
+
+
+
+
+      {
+        "pagePath": "pages/center/center",
+        "iconPath": "static/tabs/1/mine.png",
+        "selectedIconPath": "static/tabs/1/mine1.png",
+        "text": "我的"
+      }
+
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

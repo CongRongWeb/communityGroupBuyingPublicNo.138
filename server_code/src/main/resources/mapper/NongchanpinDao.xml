@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cl.dao.NongchanpinDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.cl.entity.NongchanpinEntity" id="nongchanpinMap">
+        <result property="tupian" column="tupian"/>
+        <result property="chanpinmingcheng" column="chanpinmingcheng"/>
+        <result property="nongchanpinfenlei" column="nongchanpinfenlei"/>
+        <result property="guige" column="guige"/>
+        <result property="chuchandi" column="chuchandi"/>
+        <result property="chanpinxiangqing" column="chanpinxiangqing"/>
+        <result property="shengchanguocheng" column="shengchanguocheng"/>
+        <result property="price" column="price"/>
+        <result property="clicktime" column="clicktime"/>
+        <result property="jf" column="jf"/>
+    </resultMap>
+
+    <select id="selectListView"
+		resultType="com.cl.entity.view.NongchanpinView" >
+
+		SELECT  nongchanpin.* FROM nongchanpin  nongchanpin 	        
+        <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectView"
+		resultType="com.cl.entity.view.NongchanpinView" >
+		SELECT * FROM nongchanpin  nongchanpin <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+
+</mapper>

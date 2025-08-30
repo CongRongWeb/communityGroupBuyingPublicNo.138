@@ -1,0 +1,63 @@
+
+<view class="update-container">
+ <view class="content">
+     <view class="form-box">
+
+    <view class="item-box">
+        <view class="item-label">活动名称</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.huodongmingcheng==true}}"  placeholder="活动名称" model:value="{{huodongmingcheng}}" />
+    </view>
+
+    <view class="item-box">
+        <view class="item-label">开始时间</view>
+        <picker   class="down-item-picker"    mode="date" value="{{kaishishijian}}"  bindchange="kaishishijianChange" >
+            <view class="down-item-picker-text">  {{kaishishijian}}</view>
+        </picker>
+    </view>
+
+    <view class="item-box">
+        <view class="item-label">结束时间</view>
+        <picker   class="down-item-picker"    mode="date" value="{{jieshushijian}}"  bindchange="jieshushijianChange" >
+            <view class="down-item-picker-text">  {{jieshushijian}}</view>
+        </picker>
+    </view>
+
+    <view class="item-box"  >
+        <view class="item-label">发布时间</view>
+        <view class="down-item-picker"  bindtap="onfabushijianTap">
+            <view class="down-item-picker-text">         {{fabushijian}}</view>
+        </view>
+    </view>
+    <com-date isShowPicker="{{showfabushijian}}" bind:dateHandler="fabushijianTap"></com-date>
+<view class="item-box"    bindtap="uploadtupian">
+    <view   class="item-label">图片</view>
+    <image  src="{{tupianPath?tupianPath:imgIcon}}" mode="aspectFill"  class="item-img"></image>
+</view>
+
+<view class="item-box"  >
+    <view class="item-label">活动详情</view>
+
+    <textarea model:value="{{huodongxiangqing}}" placeholder="活动详情"     data-info="{{huodongxiangqing}}" maxlength="300" id="huodongxiangqing"></textarea>
+</view>
+
+     </view>
+
+
+     <view class="btn-box">
+
+
+
+  <button     class="submit-btn" bindtap="submit">提交</button>
+     </view>
+
+
+    </view>
+
+</view>
